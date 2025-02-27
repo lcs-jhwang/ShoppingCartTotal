@@ -11,6 +11,8 @@
 		314E4F542D70A56B00772E9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 314E4F4F2D70A56B00772E9F /* Assets.xcassets */; };
 		314E4F552D70A56B00772E9F /* ShoppingCartTotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314E4F502D70A56B00772E9F /* ShoppingCartTotalView.swift */; };
 		314E4F562D70A56B00772E9F /* ShoppingCartTotalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314E4F512D70A56B00772E9F /* ShoppingCartTotalApp.swift */; };
+		314E4F5B2D70A69300772E9F /* ShoppingCartTotal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314E4F5A2D70A67600772E9F /* ShoppingCartTotal.swift */; };
+		314E4F5D2D70A75D00772E9F /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314E4F5C2D70A74A00772E9F /* CartViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		314E4F4F2D70A56B00772E9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		314E4F502D70A56B00772E9F /* ShoppingCartTotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartTotalView.swift; sourceTree = "<group>"; };
 		314E4F512D70A56B00772E9F /* ShoppingCartTotalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartTotalApp.swift; sourceTree = "<group>"; };
+		314E4F5A2D70A67600772E9F /* ShoppingCartTotal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartTotal.swift; sourceTree = "<group>"; };
+		314E4F5C2D70A74A00772E9F /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 		314E4F572D70A56F00772E9F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				314E4F5A2D70A67600772E9F /* ShoppingCartTotal.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -79,6 +84,7 @@
 		314E4F582D70A57800772E9F /* ModelView */ = {
 			isa = PBXGroup;
 			children = (
+				314E4F5C2D70A74A00772E9F /* CartViewModel.swift */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -164,7 +170,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				314E4F5D2D70A75D00772E9F /* CartViewModel.swift in Sources */,
 				314E4F552D70A56B00772E9F /* ShoppingCartTotalView.swift in Sources */,
+				314E4F5B2D70A69300772E9F /* ShoppingCartTotal.swift in Sources */,
 				314E4F562D70A56B00772E9F /* ShoppingCartTotalApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
