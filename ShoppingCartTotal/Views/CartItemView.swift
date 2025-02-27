@@ -16,24 +16,26 @@ struct CartItemView: View {
     // MARK: Computed properties
     var body: some View {
         
-        HStack {
+        VStack {
             // Show the provided base, exponent, and result
             // in an arrangement that looks the same as how
             // we write a power on paper in math class
-            HStack(alignment: .center) {
-                HStack(alignment: .top) {
-                    
-                    Text("\(shoppingCartView.total.formatted())")
-                        .font(.largeTitle)
-                    
-                    Text("\(shoppingCartView.hst.exponent)")
-                        .font(.title2)
-                }
+    
+            HStack {
+                
+                Text("\(shoppingCartView.total.formatted())")
+                    .font(.largeTitle)
+            }
+            
+            HStack{
+                
+                Text("\(shoppingCartView.hst.formatted())")
+                    .font(.largeTitle)
+            }
+                
                 HStack {
  
-                    Text("=")
-                        .font(.largeTitle)
- 
+      
                     Text("\(shoppingCartView.totalAmountWithHST.formatted())")
                         .font(.largeTitle)
                 }
@@ -44,6 +46,8 @@ struct CartItemView: View {
             Spacer()
         }
         
-    }
+    
 }
- 
+#Preview {
+    CartItemView(shoppingCartView: ShoppingCartTotal(item1: 1, item2: 2, item3: 3))
+}

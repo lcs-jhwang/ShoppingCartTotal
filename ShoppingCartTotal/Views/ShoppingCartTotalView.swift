@@ -29,6 +29,17 @@ struct ShoppingCartTotalView: View {
                     Text("\(shoppingCartTotal.totalAmountWithHST.formatted())")
                 }
                 
+                Button {
+                    viewModel.saveResult()
+                    // DEBUG: Show how many items are in the resultHistory array
+                    print("There are \(viewModel.resultHistory.count) elements in the resultHistory array.")
+                } label: {
+                    Text("Save")
+                }
+                .buttonStyle(.borderedProminent)
+                .padding(.bottom)
+
+                
             } else {
                 ContentUnavailableView("Unable to evaluate", systemImage: "gear.badge.questionmark" , description: Text("\(viewModel.recoverySuggestion)"))
             }
@@ -39,6 +50,12 @@ struct ShoppingCartTotalView: View {
                 .padding(5)
             TextField("Item 3", text: $viewModel.providedItem3)
                 .padding(5)
+            
+            List(viewModel.resultHistory) { priorResult in
+                CartItemView(shoppingCartView: priorResult)
+            }
+ 
+            
             Spacer()
             
         }

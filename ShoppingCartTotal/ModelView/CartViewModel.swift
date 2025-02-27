@@ -11,6 +11,10 @@ import Foundation
 class CartViewModel {
     
     //MARK: Stored properties
+    
+    var resultHistory: [ShoppingCartTotal] = []
+
+    
     var providedItem1: String
     var providedItem2: String
     var providedItem3: String
@@ -48,5 +52,22 @@ class CartViewModel {
         self.providedItem3 = providedItem3
         self.recoverySuggestion = recoverySuggestion
     }
+    
+    func saveResult() {
+        
+        // When there is a valid power based on user input...
+        if let shoppingCartTotal = self.shoppingCartTotal {
+            
+            // ... save that evaluated power at the top of the history of
+            // results
+            //
+            // NOTE: By inserting the newly evaluated power at the top of
+            //       the array, we ensure the user sees
+            //       the most recent result first.
+            self.resultHistory.insert(shoppingCartTotal, at: 0)
+        }
+        
+    }
+
     
 }
