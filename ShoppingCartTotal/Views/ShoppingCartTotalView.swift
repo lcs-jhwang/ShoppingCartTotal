@@ -14,30 +14,33 @@ struct ShoppingCartTotalView: View {
     var body: some View {
         
         VStack {
-            
+            Spacer()
             if let shoppingCartTotal = viewModel.shoppingCartTotal{
                 HStack{
                     Text("The total of the groceries is:")
-                        .padding()
                     Text("\(shoppingCartTotal.total.formatted())")
-                        .padding()
                 }
                 HStack{
                     Text("The total HST is:")
-                        .padding()
                     Text("\(shoppingCartTotal.hst.formatted())")
-                        .padding()
                 }
                 HStack{
                     Text("Your total cost is:")
                     Text("\(shoppingCartTotal.totalAmountWithHST.formatted())")
                 }
                 
+            } else {
+                ContentUnavailableView("Unable to evaluate", systemImage: "gear.badge.questionmark" , description: Text("\(viewModel.recoverySuggestion)"))
             }
             
             TextField("Item 1", text: $viewModel.providedItem1)
+                .padding(5)
             TextField("Item 2", text: $viewModel.providedItem2)
+                .padding(5)
             TextField("Item 3", text: $viewModel.providedItem3)
+                .padding(5)
+            Spacer()
+            
         }
         .padding()
     }
