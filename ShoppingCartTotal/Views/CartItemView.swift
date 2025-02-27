@@ -22,20 +22,22 @@ struct CartItemView: View {
             // we write a power on paper in math class
     
             HStack {
-                
+                Text("The total of the groceries is:")
                 Text("\(shoppingCartView.total.formatted())")
                     .font(.largeTitle)
             }
             
             HStack{
-                
+                Text("The total HST is:")
+
                 Text("\(shoppingCartView.hst.formatted())")
                     .font(.largeTitle)
             }
                 
                 HStack {
  
-      
+                    Text("Your total cost is:")
+
                     Text("\(shoppingCartView.totalAmountWithHST.formatted())")
                         .font(.largeTitle)
                 }
