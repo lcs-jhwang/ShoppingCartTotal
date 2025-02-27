@@ -23,4 +23,7 @@ struct ShoppingCartTotal {
     var hst: Double {
         return total * 0.13
     }
+    var totalAmountWithHST: Double{
+        return hst + total
+    }
 }
