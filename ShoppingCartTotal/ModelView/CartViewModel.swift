@@ -38,10 +38,10 @@ class CartViewModel {
         recoverySuggestion = ""
         return ShoppingCartTotal(item1: item1, item2: item2, item3: item3)
     }
-    init(providedItem1: String,
-         providedItem2: String,
-         providedItem3: String,
-         recoverySuggestion: String
+    init(providedItem1: String = "",
+         providedItem2: String = "",
+         providedItem3: String = "",
+         recoverySuggestion: String = ""
     ) {
         self.providedItem1 = providedItem1
         self.providedItem2 = providedItem2
