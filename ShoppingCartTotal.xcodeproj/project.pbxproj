@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		310EB4652D70B6600006D9C5 /* CartItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310EB4642D70B6510006D9C5 /* CartItemView.swift */; };
 		314E4F532D70A56B00772E9F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 314E4F4D2D70A56B00772E9F /* Preview Assets.xcassets */; };
 		314E4F542D70A56B00772E9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 314E4F4F2D70A56B00772E9F /* Assets.xcassets */; };
 		314E4F552D70A56B00772E9F /* ShoppingCartTotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314E4F502D70A56B00772E9F /* ShoppingCartTotalView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		310EB4642D70B6510006D9C5 /* CartItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemView.swift; sourceTree = "<group>"; };
 		314E4F3C2D70A53B00772E9F /* ShoppingCartTotal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingCartTotal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		314E4F4D2D70A56B00772E9F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		314E4F4F2D70A56B00772E9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				314E4F502D70A56B00772E9F /* ShoppingCartTotalView.swift */,
+				310EB4642D70B6510006D9C5 /* CartItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				314E4F5D2D70A75D00772E9F /* CartViewModel.swift in Sources */,
 				314E4F552D70A56B00772E9F /* ShoppingCartTotalView.swift in Sources */,
 				314E4F5B2D70A69300772E9F /* ShoppingCartTotal.swift in Sources */,
+				310EB4652D70B6600006D9C5 /* CartItemView.swift in Sources */,
 				314E4F562D70A56B00772E9F /* ShoppingCartTotalApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,8 +7,10 @@
 
 import Foundation
 
-struct ShoppingCartTotal {
+struct ShoppingCartTotal: Identifiable {
+    
     //MARK: Stored properties
+    let id = UUID()
     var item1: Double
     var item2: Double
     var item3: Double
